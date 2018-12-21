@@ -1,0 +1,1 @@
+include ':app', ':module_chat', ':module_contact', ':module_find', ':module_mine', ':module_common'
