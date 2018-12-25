@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 
-import static com.hzy.module_common.config.Constants.FIND_FRAGMENT;
+import static com.hzy.module_common.config.ARouterConfig.FIND_FRAGMENT;
 
 @Route(path = FIND_FRAGMENT)
 public class FindMainFragment extends Fragment {

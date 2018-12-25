@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 
-import static com.hzy.module_common.config.Constants.MINE_FRAGMENT;
+import static com.hzy.module_common.config.ARouterConfig.MINE_FRAGMENT;
 
 @Route(path = MINE_FRAGMENT)
 public class MineMainFragment extends Fragment {

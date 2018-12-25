@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 
-import static com.hzy.module_common.config.Constants.CONTACT_FRAGMENT;
+import static com.hzy.module_common.config.ARouterConfig.CONTACT_FRAGMENT;
 
 @Route(path = CONTACT_FRAGMENT)
 public class ContactMainFragment extends Fragment {

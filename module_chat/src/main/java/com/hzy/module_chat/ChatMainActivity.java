@@ -3,29 +3,18 @@ package com.hzy.module_chat;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
-import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.MenuItem;
 
 import com.hzy.module_common.adapter.BottomAdapter;
 import com.hzy.module_common.utils.ARouterUtils;
 
-import static com.hzy.module_common.config.Constants.CONTACT_FRAGMENT;
-import static com.hzy.module_common.config.Constants.FIND_FRAGMENT;
-import static com.hzy.module_common.config.Constants.MINE_FRAGMENT;
+import static com.hzy.module_common.config.ARouterConfig.CONTACT_FRAGMENT;
+import static com.hzy.module_common.config.ARouterConfig.FIND_FRAGMENT;
+import static com.hzy.module_common.config.ARouterConfig.MINE_FRAGMENT;
 
 public class ChatMainActivity extends AppCompatActivity {
-
-    /**
-     * 存放切换Fragment
-     */
-//    private Fragment findFragment = (Fragment) ARouterUtils.getFragment(FIND_FRAGMENT);
-//
-//    private Fragment contactFragment = (Fragment) ARouterUtils.getFragment(CONTACT_FRAGMENT);
-//
-//    private Fragment mineFragment = (Fragment) ARouterUtils.getFragment(MINE_FRAGMENT);
 
     private ViewPager mVp;
     private BottomNavigationView mBv;
@@ -103,12 +92,6 @@ public class ChatMainActivity extends AppCompatActivity {
         adapter.addFragment(ARouterUtils.getFragment(FIND_FRAGMENT));
         adapter.addFragment(ARouterUtils.getFragment(CONTACT_FRAGMENT));
         adapter.addFragment(ARouterUtils.getFragment(MINE_FRAGMENT));
-        Log.e("contactFragment1",ARouterUtils.getFragment(FIND_FRAGMENT).toString());
-        Log.e("contactFragment11",ARouterUtils.getFragment(FIND_FRAGMENT).toString());
-        Log.e("contactFragment11",ARouterUtils.getFragment(FIND_FRAGMENT).toString());
-//        adapter.addFragment(contactFragment);
-//        adapter.addFragment(findFragment);
-//        adapter.addFragment(mineFragment);
         viewPager.setAdapter(adapter);
     }
 }
