@@ -12,9 +12,9 @@ android {
     buildToolsVersion rootProject.ext.versions.buildToolsVersion
 
     defaultConfig {
-        if (Boolean.valueOf(rootProject.ext.isModule)) {
-            applicationId "com.hzy.module_mine"
-        }
+//        if (Boolean.valueOf(rootProject.ext.isModule)) {
+//            applicationId "com.hzy.module_mine"
+//        }
         //MultiDex分包方法
         multiDexEnabled true
         minSdkVersion rootProject.ext.versions.minSdkVersion

@@ -39,4 +39,9 @@ public class BaseApp extends Application {
         ARouter.init(application);// 尽可能早，推荐在Application中初始化
     }
 
+    @Override
+    public void onTerminate() {
+        super.onTerminate();
+        ARouter.getInstance().destroy();
+    }
 }

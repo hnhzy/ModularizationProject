@@ -10,9 +10,9 @@ android {
     compileSdkVersion rootProject.ext.versions.compileSdkVersion
     buildToolsVersion rootProject.ext.versions.buildToolsVersion
     defaultConfig {
-        if (Boolean.valueOf(rootProject.ext.isModule)) {//单独开发
-            applicationId "com.hzy.module_chat"
-        }
+//        if (Boolean.valueOf(rootProject.ext.isModule)) {//单独开发
+//            applicationId "com.hzy.module_chat"
+//        }
         //MultiDex分包方法
         multiDexEnabled true
         minSdkVersion rootProject.ext.versions.minSdkVersion

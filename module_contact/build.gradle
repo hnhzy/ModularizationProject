@@ -10,9 +10,9 @@ android {
     compileSdkVersion rootProject.ext.versions.compileSdkVersion
     buildToolsVersion rootProject.ext.versions.buildToolsVersion
     defaultConfig {
-        if (Boolean.valueOf(rootProject.ext.isModule)) {
-            applicationId "com.hzy.module_contact"
-        }
+//        if (Boolean.valueOf(rootProject.ext.isModule)) {
+//            applicationId "com.hzy.module_contact"
+//        }
         //MultiDex分包方法
         multiDexEnabled true
         minSdkVersion rootProject.ext.versions.minSdkVersion
