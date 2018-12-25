@@ -12,13 +12,6 @@ android {
     defaultConfig {
         if (Boolean.valueOf(rootProject.ext.isModule)) {
             applicationId "com.hzy.module_find"
-        } else {
-            javaCompileOptions {//Arouter路由配置
-                annotationProcessorOptions {
-                    arguments = [AROUTER_MODULE_NAME: project.getName()]
-                    includeCompileClasspath = true
-                }
-            }
         }
         //MultiDex分包方法
         multiDexEnabled true
@@ -27,6 +20,13 @@ android {
         versionCode rootProject.ext.versions.versionCode
         versionName rootProject.ext.versions.versionName
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {//Arouter路由配置
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+                includeCompileClasspath = true
+            }
+        }
 
 
     }

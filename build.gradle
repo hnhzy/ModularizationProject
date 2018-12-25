@@ -6,7 +6,8 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.1'
+//        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath "com.android.tools.build:gradle:3.0.1"
         //黄油刀
         classpath "com.jakewharton:butterknife-gradle-plugin:8.4.0"
         //数据库GreenDAO
